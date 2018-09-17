@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFA500" >
+
+    <ImageView
+        android:id="@+id/imgLogoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/ic_glossario" />
+
+    <LinearLayout
+        android:id="@+id/linearTextLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogoLogin"
+        android:layout_marginTop="30dip"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edtTextUsuario"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dip"
+            android:hint="Usuário"
+            android:textColor="#ffffff"
+            android:textColorHint="#8B8989" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edtTextSenha"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dip"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:textColorHint="#8B8989" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_progress_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogoLogin"
+        android:layout_marginTop="30dip"
+        android:visibility="invisible" 
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Efetuando login..."
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:layout_below="@+id/linearTextLogin"
+        android:layout_centerHorizontal="true"
+        android:text="Entrar"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

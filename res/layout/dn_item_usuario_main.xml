@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dip" >
+    
+    <ImageView 
+         android:id="@+id/imgTecnico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_usuario"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/txtLoginTecnico_Nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_toRightOf="@+id/imgTecnico"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="Usuário"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtCodTecnico_Nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_below="@+id/txtLoginTecnico_Nav"
+        android:layout_toRightOf="@+id/imgTecnico"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="0001"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#fff"
+        android:textSize="15sp"
+         />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/imgTecnico"
+        android:layout_marginRight="5dip"
+        android:src="#828282" />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA500"
+    android:orientation="vertical"
+    android:padding="3dip" >
+
+    <ImageView
+        android:id="@+id/imgSinal"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:layout_margin="3dip" />
+
+    <TextView
+        android:id="@+id/txt_sinal_conceito"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgSinal"
+        android:layout_marginTop="20dip"
+        android:text="Conceito:"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edt_sinal_conceito"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/txt_sinal_conceito"
+        android:layout_margin="3dip"
+        android:background="#EEE9E9" />
+
+    <TextView
+        android:id="@+id/txt_sinal_descricao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_sinal_conceito"
+        android:layout_marginTop="15dip"
+        android:text="Descrição:"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edt_sinal_descricao"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_below="@+id/txt_sinal_descricao"
+        android:layout_margin="3dip"
+        android:background="#EEE9E9" />
+
+    <LinearLayout
+        android:id="@+id/linear_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:padding="3dip" >
+
+        <Button
+            android:id="@+id/btn_sinal_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Salvar" />
+
+        <Button
+            android:id="@+id/btn_sinal_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_progress_foto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#cc000000"
+        android:visibility="invisible" 
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Enviando registro..."
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+</RelativeLayout>

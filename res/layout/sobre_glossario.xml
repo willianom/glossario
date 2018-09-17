@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA500"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgLogoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:src="@drawable/ic_glossario" />
+
+    <TextView
+        android:id="@+id/txt_autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogoLogin"
+        android:layout_marginLeft="10dp"
+        android:text="Autor:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_nome_autor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogoLogin"
+        android:layout_toRightOf="@+id/txt_autor"
+        android:text="  Elton Raniere" />
+
+    <TextView
+        android:id="@+id/txt_dev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_autor"
+        android:layout_marginLeft="10dp"
+        android:text="Desenvolvedor:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_nome_dev"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_autor"
+        android:layout_toRightOf="@+id/txt_dev"
+        android:text="  Willian Matos" />
+
+    <WebView
+        android:id="@+id/webview_desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_dev" 
+        android:layout_margin="10dp"
+        android:background="#FFA500"/>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA500" >
+
+    <LinearLayout
+        android:id="@+id/layout_img_sinais"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:orientation="horizontal" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_foto_sinal"
+            android:layout_width="80dip"
+            android:layout_height="100dip"
+            android:layout_margin="10dip"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txt_nome_inf_sinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="15dip"
+            android:layout_weight="1"
+            android:text="Exemplo" />
+
+        <ImageView
+            android:id="@+id/img_view_sinal"
+            android:layout_width="80dip"
+            android:layout_height="100dip"
+            android:layout_margin="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/ic_config1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_inf_sinais"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_img_sinais"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="Descrição:" />
+
+        <TextView
+            android:id="@+id/txt_descricao_inf_sinal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_margin="5dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="Comentários:" />
+
+        <ListView
+            android:id="@+id/list_coment_inf_sinal"
+            android:layout_width="fill_parent"
+            android:layout_height="239dp"
+            android:layout_margin="5dip" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_coment_inf_sinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_coment_inf_sinal"
+        android:layout_alignLeft="@+id/layout_img_sinais"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btn_coment_inf_sinal"
+        android:ems="10"
+        android:hint="Escreva seu comentário" >
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/btn_coment_inf_sinal"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/layout_img_sinais"
+        android:layout_below="@+id/layout_inf_sinais"
+        android:src="@drawable/ic_action_send_now" />
+
+</RelativeLayout>
